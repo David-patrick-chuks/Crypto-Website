@@ -343,7 +343,7 @@ body, html{
     display: grid;
     color: white;
     place-items: center;
-    margin: 180px 10vw 180px 10vw;
+    margin: 180px 10vw 0px 10vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 350px;
     column-gap: 50px;
@@ -598,6 +598,8 @@ body, html{
 }
 #footerlooper{
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 #footerloop{
     /* position: absolute;
