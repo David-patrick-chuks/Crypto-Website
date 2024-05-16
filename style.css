@@ -27,6 +27,7 @@ body, html{
     scrollbar-width: none !important;
     background: #0B0B0F;
     z-index: -1;
+    position: relative;
 }
 #CryptoNAV{
     position: sticky;
@@ -665,7 +666,8 @@ body, html{
     grid-template-rows: 450px;
     margin: 95px 10vw 0px 10vw;
     color: #4d4d4d;
-    position: relative;
+    position: absolute;
+    bottom: -520px;
 }
 #footer::after{
     position: absolute;
