@@ -660,7 +660,7 @@ body, html{
     border-radius: 10px;
 }
 #footer{
-    /* background: red; */
+    background: red;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 450px;
