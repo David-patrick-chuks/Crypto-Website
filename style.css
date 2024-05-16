@@ -601,7 +601,7 @@ body, html{
 #footerloop{
     position: absolute;
     top: -300px;
-    width: 100vw;
+    width: 100%;
 }
 #footersubscribe{
     display: flex;
@@ -659,10 +659,11 @@ body, html{
     border-radius: 10px;
 }
 #footer{
+    /* background: red; */
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 450px;
-    margin: 95px 10vw 0vw 10vw;
+    margin: 95px 10vw 0px 10vw;
     color: #4d4d4d;
     position: relative;
 }
@@ -738,6 +739,7 @@ body, html{
     /* background: red; */
     bottom: -20px;
 }
+
 
 .navyy::after{
     position: absolute;
