@@ -612,7 +612,9 @@ body, html{
     color: white;
     gap: 20px;
     position: absolute;
-    bottom: 0;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #footerTITLE{
     font-size:47px;
@@ -661,11 +663,15 @@ body, html{
     border-radius: 10px;
 }
 #footer{
-    background: red;
+    /* background: red; */
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 451px;
-    margin: 95px 10vw 0px 10vw;
+    /* left: 13vw; */
+    padding: 0px 130px 0px 130px;
+    width: 100%;
+    /* overflow: hidden; */
+    /* transform: translateX(-50%); */
     color: #4d4d4d;
     position: absolute;
     bottom: 0px;
@@ -680,6 +686,7 @@ body, html{
     left: -130px;
 }
 #QuickDESP{
+    position: relative;
     padding: 100px 0px 135px 0px;
     /* background: red; */
     display: flex;
@@ -691,6 +698,7 @@ body, html{
     color: #797979;
 }
 #quickLINK{
+    position: relative;
     padding: 100px 0px 135px 0px;
     /* background: red; */
     display: flex;
@@ -705,6 +713,7 @@ body, html{
     font-weight: 700;
 }
 #footMain{
+    position: relative;
     padding: 100px 0px 135px 0px;
     font-size: 13px;
     font-weight: 500;
