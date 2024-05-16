@@ -1,0 +1,841 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+#mainHERO{
+    width: 100%;
+    position: relative;
+
+}
+#planetRAIL{
+    position: absolute;
+    width: 100%;
+    top: 703.5px;
+
+}
+#plannet{
+    position: absolute;
+    width: 100%;
+}
+
+body, html{
+    margin-top: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth ;
+    scrollbar-width: none !important;
+    background: #0B0B0F;
+    z-index: -1;
+}
+#CryptoNAV{
+    position: sticky;
+    /* background: #0B0B0F; */
+    z-index: 5000;   
+    /* top: 100px;      */
+    display: grid;
+    color: white;
+    padding: 0vw 10vw 0vw 10vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 65px;
+ 
+}
+#NavHeader{
+    color: white;
+    display: flex;
+    z-index: 5000;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-size: 70%;
+    font-weight: 500;
+}
+#NavBTN{
+    gap: 10px;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#NavBTN1{
+    border: 1px solid white;
+    background: none;
+    border-radius: 10px;
+    color:white;
+    width: 86px;
+    z-index: 50;
+    height: 37px;
+}
+#NavBTN2{
+    border: none;
+    background: linear-gradient(67deg, #933FFE 0%, #18C8FF 80%);
+    border-radius: 10px;
+    color:white;
+    width: 87px;
+    height: 38px;
+}
+#HeroFloatingIMG{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* background: red; */
+    overflow: hidden;
+    height: 1000px;
+}
+#CrytoHero{
+    /* z-index: 100; */
+    height: 571px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* width: 100%; */
+    /* background: rgb(0, 0, 255, 0.1); */
+    margin: 0vw 10vw 0vw 10vw;
+
+}
+#CrytoHero p{
+    font-size: 70px;
+    width: 710px;
+    text-align: center;
+    font-weight: 800;
+    /* background: red; */
+    line-height: 75px;
+    z-index: 50;
+}
+#HeroBTN{
+    border: none;
+    background: linear-gradient(67deg, #933FFE 0%, #18C8FF 80%);
+    border-radius: 10px;
+    color:white;
+    width: 136px;
+    height: 45px;
+    font-size: 14px;
+    z-index: 50;
+    font-weight: 600;
+
+}
+#float1{
+    width: 90px;
+    position: absolute;
+    top: 110px;
+    left: 60px;
+}
+
+#float2{
+    position: absolute;
+    top: 0;
+    width: 30px;
+    top: 195px;
+    left: 170px;
+}
+#float3{
+    position: absolute;
+    top: 0;
+    width: 90px;
+    top: 355px;
+    left: 60px;
+}
+#float4{
+    width: 90px;
+    position: absolute;
+    top: 545px;
+    left: 140px;
+}
+#float5{
+    position: absolute;
+    width: 105px;
+    top: 280px;
+    left: 375px;
+    z-index: 10;
+}
+
+#float6{
+    position: absolute;
+    width: 125px;
+    top: 545px;
+    z-index: 8;
+    right: 305px;
+}
+#float7{
+    position: absolute;
+    width: 40px;
+    top: 650px;
+    z-index: 8;
+    right: 115px;
+}
+
+#float8{
+    position: absolute;
+    width: 250px;
+    top: 350px;
+    z-index: 100;
+    right: -115px;
+}
+#float9{
+    position: absolute;
+    width: 130px;
+    top: 210px;
+    z-index: 8;
+    right: 90px;
+}
+#float10{
+    position: absolute;
+    width: 45px;
+    top: 160px;
+    z-index: 8;
+    right: 90px;
+}
+#float11{
+    position: absolute;
+    width: 45px;
+    top: 110px;
+    z-index: 8;
+    right: 210px;
+}
+#float12{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+}
+#float13{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+.clm{
+    position: relative;
+    z-index: 10000;
+    column-gap: 20px;
+    display: grid;
+    color: white;
+    margin: 180px 10vw 180px 10vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+}
+.clm div{
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: #1A1B23;
+    padding: 20px 0 20px 0;
+}
+#headerLOGO{
+    width: 60px;
+}
+#link{
+    color: #B982FF;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+#link::after{
+    width: 82%;
+    content: "";
+    height: 1px;
+    background: #B982FF;
+    bottom: 0;
+    border-radius: 5px;
+    position: absolute;
+    visibility: hidden;
+}
+#link:hover::after{
+    visibility: visible;
+    animation: line .7s;
+
+}
+@keyframes line {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 82%;
+    }
+}
+#header{
+    font-size: 28px;
+    font-weight: 800;
+}
+#desp{
+    color: #898CA9;
+    font-size: 13px;
+    width: 270px;
+    line-height: 20px;  
+
+}
+#mining{
+    /* background-color: red; */
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 0vw 10vw 0vw 10vw;
+    position: relative;
+}
+#looper{
+    position: absolute;
+    top: -160px;
+    right: -560px;
+    width: 90%;
+}
+#loopStar{
+    position: absolute;
+    top: 230px;
+    right: 150px;
+    width: 45px;
+}
+#starA{
+    position: absolute;
+    top: -130px;
+    left: -30px;
+    width: 60px;
+}
+#starB{
+    position: absolute;
+    top: -210px;
+    left: -60px;
+    width: 50px;
+}
+#MiningBtn{
+    border: none;
+    background: linear-gradient(67deg, #933FFE 0%, #18C8FF 80%);
+    border-radius: 10px;
+    color:white;
+    width: 136px;
+    height: 45px;
+    font-size: 14px;
+    z-index: 50;
+    font-weight: 600;
+
+}
+
+#MiningTitle{
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    width: 700px;
+    line-height: normal;
+    z-index: 50;
+}
+
+#MiningDesp{
+    text-align: center;
+    width: 600px;
+    color: #898CA9;
+    z-index: 50;
+}
+#services{
+    position: relative;
+    z-index: 10000;
+    column-gap: 20px;
+    display: grid;
+    color: white;
+    place-items: center;
+    margin: 180px 10vw 180px 10vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 350px;
+    column-gap: 50px;
+}
+#serviceBTN{
+    border: 1px solid white;
+    background: none;
+    border-radius: 10px;
+    color:white;
+    width: 156px;
+    z-index: 50;
+    height: 56px;
+}
+#industryTitle{
+    width: 780px;
+    font-weight: 800;
+    line-height: 60px;
+    font-size: 50px;
+    margin-bottom: 18px;
+    text-align: center;
+    z-index: 60;
+
+}
+#serviceTitle{
+    width: 500px;
+    font-weight: 800;
+    line-height: 60px;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+#industryDESP{
+    width: 600px;
+    color: #898CA9;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 18px;
+    text-align: center;
+}
+#serviceDesp{
+    width: 500px;
+    color: #898CA9;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 18px;
+}
+#bluebgg{
+    position: relative;
+}
+#blueBG2{
+    position: absolute;
+    top: -730px;
+    right: 0px;
+    width: 49%;
+}
+
+#SphereBg{
+    position: absolute;
+    top: -300px;
+    left: -130px;
+    width: 60%;
+    z-index: 10;
+
+}
+#userICON{
+    z-index: 60;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 250px;
+}
+#Sphere{
+    position: absolute;
+    z-index: 50;
+    bottom: 10px;
+    width: 150px;
+    left: 50px;
+}
+#serviceStar{
+    position: absolute;
+    z-index: 50;
+    left: 30px;
+    top: 20px;
+    width: 60px;
+
+
+}
+
+#industry{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#serviceLINK{
+    color: #B982FF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 50;
+    position: relative;
+}
+#serviceLINK::after{
+    width: 82%;
+    content: "";
+    height: 1px;
+    background: #B982FF;
+    bottom: 0;
+    border-radius: 5px;
+    position: absolute;
+    visibility: hidden;
+}
+#serviceLINK:hover::after{
+    visibility: visible;
+    animation: serviceLINK .7s;
+
+}
+@keyframes serviceLINK {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 82%;
+    }
+}
+#cryptoCHART::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 15px;
+    bottom: 0;
+    z-index: 500;
+    /* background: red; */
+    background-color: #1A1B23;
+}
+#cryptoCHART{
+    z-index: 1000;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 0.5fr 2fr 1fr;
+    grid-template-rows: repeat(5,60px);
+    margin: 70px 10vw 0vw 10vw;
+    background-color: #1A1B23;
+}
+#myLOOP2{
+    position: relative;
+}
+#loop2{
+    position: absolute;
+    top: -720px;
+    left: 0px;
+    width: 43%;
+}
+#crypoIMG{
+    grid-column: 5;
+    border-bottom: 1px solid #2B2C3B;
+    display: flex;
+    align-items: center;
+    /* margin-right: 1px; */
+    justify-content: center;
+    /* background: red; */
+}
+#cryptoTRADE{
+    grid-column: 6;
+    display: flex;
+    border-bottom: 1px solid #2B2C3B;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    z-index: 500;
+    position: relative;
+}
+#cryptoDEC{
+    display: flex;
+    align-items: center;
+    color: #0DBB7C;
+    font-weight: 600;
+    grid-column: 4;
+    border-bottom: 1px solid #2B2C3B;
+}
+.active{
+    color: #FF8282 !important;
+}
+#cryptoAMT{
+    border-bottom: 1px solid #2B2C3B;
+    display: flex;
+    align-items: center;
+    grid-column: 3;
+    padding-right: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    justify-content: end;
+    /* margin-right: 50px; */
+}
+#cryptoABR{
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    color: #B982FF;
+    font-weight: 600;
+    border-bottom: 1px solid #2B2C3B;
+}
+#cryptonames{
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    font-weight: 600;
+    border-bottom: 1px solid #2B2C3B;
+}
+#serviceBTN2{
+    border: none;
+    background: linear-gradient(67deg, #933FFE 0%, #18C8FF 80%);
+    border-radius: 10px;
+    color:white;
+    width: 130px;
+    height: 42px;
+}
+#bagbg{
+    position: relative;
+}
+#serviceBg{
+    position: absolute;
+    top: -830px;
+    right: 0;
+    width: 60%;
+    display: block;
+
+}
+#bagfloat{
+    position: relative;
+}
+#bagSTAR{
+    position: absolute;
+    bottom: 20px;
+    right: -90px;
+    width: 55px;
+}
+#bagsmalstar{
+    position: absolute;
+    top: 0;
+    width: 40px;
+    right: -50px;
+}
+#sBAG{
+    width: 250px;
+}
+#footerlooper{
+    position: relative;
+}
+#footerloop{
+    position: absolute;
+    top: -300px;
+    width: 100vw;
+}
+#footersubscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    position: relative;
+}
+#footerTITLE{
+    font-size:47px;
+    z-index: 50;
+    margin-top: -14px;
+    font-weight: 800;
+}
+#footerDESP{
+    color: #898CA9;
+    font-size: 15px;
+    z-index: 50;
+}
+#footerDESP span{
+    color: white;
+    
+}
+#email{
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+#email:focus{
+    outline: none;
+}
+#email::placeholder{
+    color: #898CA9;
+}
+#email_sub{
+    background-color: #0B0B0F;
+    border-radius: 8px;
+    position: relative;
+    z-index: 50;
+    height: 40px;
+    width: 245px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#gBG{
+    background: linear-gradient(67deg, #933FFE 0%, #18C8FF 80%);
+    width: 250px;
+    height: 45px;
+    position: absolute;
+    bottom: -3px;
+    border-radius: 10px;
+}
+#footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 450px;
+    margin: 95px 10vw 0vw 10vw;
+    color: #4d4d4d;
+    position: relative;
+}
+#footer::after{
+    position: absolute;
+    content: "";
+    border-top: 1px solid #212121;
+    width: 100vw;
+    height: 5px;
+    top: 0;
+    left: -130px;
+}
+#QuickDESP{
+    padding: 100px 0px 135px 0px;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    justify-content: space-between;
+    font-size: 13px;
+    z-index: 20;
+    color: #797979;
+}
+#quickLINK{
+    padding: 100px 0px 135px 0px;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 30;
+    color: #797979;
+}
+#thick{
+    font-weight: 700;
+}
+#footMain{
+    padding: 100px 0px 135px 0px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#footMain p{
+    width: 330px;
+    color: #797979;
+    z-index: 20;
+}
+#footend{
+    font-size: 11px;
+    z-index: 20;
+    /* color: #9c9c9c; */
+}
+#footgBG{
+    background: linear-gradient(67deg, #933FFE 0%, #18C8FF 80%);
+    width: 250px;
+    height: 45px;
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    z-index: 10;
+    border-radius: 10px;
+}
+#maildiv{
+    position: relative;
+}
+#footerBGG{
+    position: absolute;
+    left: -130px;
+    /* background: red; */
+    bottom: -20px;
+}
+
+.navyy::after{
+    position: absolute;
+    width: 4000px;
+    height: 1px;
+    background: rgb(46, 46, 46);
+    content: "";
+    bottom: 0;
+}
+#signupBODY{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signupFORM{
+    display: grid;
+    z-index: 50;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows:100vh;
+    /* background: red; */
+    
+}
+#rise3{
+    filter: drop-shadow(5px 5px 5px #a3a3a3);    
+    border-radius: 100%;
+}
+#hostBG{
+    position: absolute;
+    left: 0;
+    /* background: red; */
+    z-index: -1;
+}
+#enviro{
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+}
+#hosting{
+    position: absolute;
+    bottom: 5px;
+    width: 16%;
+    left: 70px;
+    /* display: none; */
+}
+#MyFORM{
+    padding: 90px 150px 90px 0px ;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+#companyLOgo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+#companyLOgoIMG{
+    width: 8%;
+}
+#companyLOgo p{
+    font-weight: 600;
+    font-size: 30px;
+}
+#label_header{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+#eror_message{
+    color: #FF8282;
+    display: none;
+}
+#MyFORM input:focus{
+    outline: none;
+    border: 1px solid #4e4e63;
+}
+
+#MyFORM input{
+    width: 100%;
+    color: white;
+    padding-left: 5px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #16161E;
+    border: none;
+}
+#signup_FormBTN{
+    border: none;
+    background: linear-gradient(67deg, #933FFE 0%, #18C8FF 80%);
+    border-radius: 8px;
+    color:white;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+}
