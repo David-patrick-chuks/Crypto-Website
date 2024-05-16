@@ -663,7 +663,7 @@ body, html{
     background: red;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 450px;
+    grid-template-rows: 451px;
     margin: 95px 10vw 0px 10vw;
     color: #4d4d4d;
     position: absolute;
