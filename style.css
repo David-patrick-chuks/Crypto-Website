@@ -569,6 +569,8 @@ body, html{
 }
 #bagbg{
     position: relative;
+    padding-bottom: 1000px;
+    /* background: red; */
 }
 #serviceBg{
     position: absolute;
@@ -597,8 +599,9 @@ body, html{
     width: 250px;
 }
 #footerlooper{
-    position: relative;
+    position: absolute;
     padding: 0;
+    bottom: 0;
     margin: 0;
 }
 #footerloop{
@@ -685,7 +688,7 @@ body, html{
     width: 100vw;
     height: 5px;
     top: 0;
-    left: -130px;
+    left: 0px;
 }
 #QuickDESP{
     position: relative;
